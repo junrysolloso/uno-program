@@ -1,0 +1,16 @@
+#wp-admin-bar-user-dashboard .ab-icon:before {
+  content: "\f110";
+  top: 3px;
+}
+
+#wp-auth-check-wrap #wp-auth-check {
+  width: 1024px !important;
+  overflow: hidden !important;
+  background-color: #fcfcff !important;
+  box-shadow: unset !important;
+  left: 32% !important;
+}
+
+#wp-auth-check {
+  max-height: 960px !important;
+}
