@@ -658,7 +658,6 @@ a:hover {
 
 .asColorPicker-input:focus, 
 .dataTables_wrapper select:focus, 
-.form-control:focus, 
 .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=number], 
 .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=text], 
 .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, 
@@ -668,6 +667,11 @@ a:hover {
 .tt-query:focus, 
 .typeahead:focus {
   border-color: var(--uno-p);
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 .2rem rgba(66, 166, 245, .5);
+  box-shadow: 0 0 0 .2rem rgba(66, 166, 245, .5);
 }
 
 .table thead th {

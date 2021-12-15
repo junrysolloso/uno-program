@@ -26,7 +26,7 @@
   <?php $uno_global_input_prefix = 'uno_beneficiary_map_beneficiary'; ?>
   <?php $uno_global_table_prefix = 'beneficiary_'; ?>
 
-  <h4 class="mb-3">Beneficiary's Identifying Information</h4>
+  <h4 class="mb-3 mt-5">Beneficiary's Identifying Information</h4>
   <?php get_template_part( 'templates/fields/field-name' ); ?>
   <?php get_template_part( 'templates/fields/field-contact' ); ?>
   <?php get_template_part( 'templates/fields/field-status' ); ?>
@@ -51,11 +51,11 @@
   <?php get_template_part( 'templates/fields/field-textarea' ); ?>
 
   <div class="type-of-assistance">
-    <h4 class="mb-3 mt-4">Type of Assistance</h4>
+    <h4 class="mb-3 mt-5">Type of Assistance</h4>
     <?php get_template_part( 'templates/fields/field-assistance' ); ?>
   </div>
 
-  <h4 class="mb-3 mt-4">Staff Information</h4>
+  <h4 class="mb-3 mt-5">Staff Information</h4>
   <?php get_template_part( 'templates/fields/field-interviewed-by' ); ?>
   <?php get_template_part( 'templates/fields/field-validated-by' ); ?>
   <?php get_template_part( 'templates/fields/field-confirmed-by' ); ?>

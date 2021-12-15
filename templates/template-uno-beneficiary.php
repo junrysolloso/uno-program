@@ -9,9 +9,7 @@ uno_user_check_cap( 'read' );
 /**
  * Global beneficiary data
  */
-global $uno_global_data;
-global $uno_global_cat;
-global $uno_global_id;
+global $uno_global_data, $uno_global_cat, $uno_global_id;
 
 /**
  * Check for GET request

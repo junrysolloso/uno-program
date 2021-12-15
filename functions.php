@@ -3,7 +3,7 @@
 /**
  * Uno constants
  */
-define( 'UNO_VERSION', '1.2.97' );
+define( 'UNO_VERSION', '1.2.98' );
 define( 'UNO_URI', get_stylesheet_directory_uri() );
 define( 'UNO_DIR', __DIR__ );
 

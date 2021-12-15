@@ -26,7 +26,7 @@
   <?php get_template_part( 'templates/fields/field-school-intended-to-enroll' ); ?>
   <?php get_template_part( 'templates/fields/field-other-finance-source' ); ?>
   
-  <h4 class="mb-3 mt-4">Staff Information</h4>
+  <h4 class="mb-3 mt-5">Staff Information</h4>
   <?php get_template_part( 'templates/fields/field-interviewed-by' ); ?>
   <?php get_template_part( 'templates/fields/field-validated-by' ); ?>
   <?php get_template_part( 'templates/fields/field-confirmed-by' ); ?>

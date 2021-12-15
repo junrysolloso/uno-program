@@ -177,12 +177,10 @@
 <!-- start main panel -->
 <div class="main-panel" id="main_panel">
 
-<div class="pt-3 pb-3" id="context-menu--container">
-  <a href="#" class="dropdown-item text-uno" id="context-menu--reload"><i class="icon-reload mr-2"></i> Reload Page</a>
-</div>
-  
+  <div class="pt-3 pb-3" id="context-menu--container">
+    <a href="#" class="dropdown-item text-uno" id="context-menu--reload"><i class="icon-reload mr-2"></i> Reload Page</a>
+  </div>
+    
   <!-- start content wrapper -->
   <div class="content-wrapper pt-5">
-    <div class="row d-flex align-items-center justify-content-center flex-column">
-      <div class="col-lg-12 col-md-12 pb-4">
     

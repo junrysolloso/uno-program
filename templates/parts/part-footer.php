@@ -1,6 +1,5 @@
-<?php defined( 'ABSPATH' ) or exit(); ?>
-                </div>
-              </div>
+              <?php defined( 'ABSPATH' ) or exit(); ?>
+              
             </div>
             <!-- end content-wrapper -->
 
