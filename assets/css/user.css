@@ -83,13 +83,11 @@ p, button, .form-control, label, td, body, html, span, small {
   height: 65px;
 }
 
-.table-fields tr td:last-child,
-.table-fields tr th:last-child {
+.table-fields tr td:last-child {
   width: 65% !important;
 }
 
-.table-fields tr td:first-child,
-.table-fields tr th:first-child {
+.table-fields tr td:first-child {
   width: 35% !important;
 }
 

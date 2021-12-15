@@ -9,6 +9,7 @@
   <!-- CAUTION: DO NOT CHANGE THE PREFIX!! -->
   <?php $uno_global_input_prefix = 'uno_beneficiary'; ?>
 
+  <h4 class="mb-3">Personal Information</h4>
   <?php get_template_part( 'templates/fields/field-uno-id' ); ?>
   <?php get_template_part( 'templates/fields/field-name' ); ?>
   <?php get_template_part( 'templates/fields/field-contact' ); ?>

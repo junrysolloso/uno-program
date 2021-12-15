@@ -9,6 +9,7 @@
   <!-- CAUTION: DO NOT CHANGE THE PREFIX!! -->
   <?php $uno_global_input_prefix = 'uno_beneficiary'; ?>
 
+  <h4 class="mb-3">Personal Information</h4>
   <?php get_template_part( 'templates/fields/field-uno-id' ); ?>
   <?php get_template_part( 'templates/fields/field-name' ); ?>
   <?php get_template_part( 'templates/fields/field-contact' ); ?>
@@ -24,17 +25,13 @@
   <!-- CAUTION: DO NOT CHANGE THE PREFIX!! -->
   <?php $uno_global_input_prefix = 'uno_beneficiary_tupad'; ?>
 
-  <div class="card mb-4">
-    <div class="card-body">
-      <h4 class="mb-3">Staff Information</h4>
-      <?php get_template_part( 'templates/fields/field-interviewed-by' ); ?>
-      <?php get_template_part( 'templates/fields/field-validated-by' ); ?>
-      <?php get_template_part( 'templates/fields/field-confirmed-by' ); ?>
-      <?php get_template_part( 'templates/fields/field-approved-by' ); ?>
-      <?php get_template_part( 'templates/fields/field-noted-by' ); ?>
-      <?php get_template_part( 'templates/fields/field-date-process' ); ?>
-    </div>
-  </div>
+  <h4 class="mb-3 mt-4">Staff Information</h4>
+  <?php get_template_part( 'templates/fields/field-interviewed-by' ); ?>
+  <?php get_template_part( 'templates/fields/field-validated-by' ); ?>
+  <?php get_template_part( 'templates/fields/field-confirmed-by' ); ?>
+  <?php get_template_part( 'templates/fields/field-approved-by' ); ?>
+  <?php get_template_part( 'templates/fields/field-noted-by' ); ?>
+  <?php get_template_part( 'templates/fields/field-date-process' ); ?>
   
   <button type="submit" class="btn btn-primary float-right"><i class="icon-arrow-right-circle mr-2"></i>Submit form</button>
 </form>

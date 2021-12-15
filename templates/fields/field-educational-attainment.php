@@ -69,7 +69,7 @@ function uno_educational_attainment( $school = '', $from = '', $to = '', $degree
 /**
  * Filter for adding button
  */
-add_filter( 'uno_table_header_right', function() { return '<a href="#" class="float-right" id="add_button_school"><i class="icon-plus"></i> Add</a>'; } );
+add_filter( 'uno_table_header_right', function() { return '<a href="#" class="ml-4" id="add_button_school"><i class="icon-plus"></i> Add</a>'; } );
 
 if ( $uno_global_id ) {
 
@@ -85,7 +85,7 @@ if ( $uno_global_id ) {
     
       // Filter for remove button
       if (  $len > 1 && $i > 0 ) {
-        add_filter( 'uno_table_header_right', function() { return '<a href="#" class="float-right text-danger remove_table_fields_edit"><i class="icon-close"></i> Delete</a>'; } );
+        add_filter( 'uno_table_header_right', function() { return '<a href="#" class="ml-4 text-danger remove_table_fields_edit"><i class="icon-close"></i> Delete</a>'; } );
       }
   
       $fields = uno_educational_attainment( $schools[$i], $froms[$i], $tos[$i], $degrees[$i] );

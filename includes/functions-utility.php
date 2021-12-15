@@ -316,10 +316,10 @@ function uno_unset_empty_array( $array ) {
  */
 function uno_output_renderer( $param_arr ) {
 
-  global $uno_global_walker_variable;
-
+  /**
+   * Remove empty key from the array
+   */
   $param_arr = uno_unset_empty_array( $param_arr );
-  $header    = '<h4 class="mb-3">'. apply_filters( 'uno_page_header_title', $uno_global_walker_variable ) .'</h4>';
 
   if ( is_array( $param_arr ) ) {
     ob_start();
@@ -335,12 +335,11 @@ function uno_output_renderer( $param_arr ) {
      * List table
      */
     if ( key_exists( 'list', $param_arr  ) ) {
+
       uno_get_header();
-
-      p_( $header );
       uno_list_table_template( $param_arr['list'] );
-
       uno_get_footer(); 
+
     } 
 
     /**
@@ -363,7 +362,6 @@ function uno_output_renderer( $param_arr ) {
     if ( key_exists( 'cb', $param_arr ) ) {
       uno_get_header();
 
-      p_( $header );
       get_template_part( $param_arr['cb'][0], '', $param_arr['cb'][1] );
       isset( $param_arr['cb'][2] ) ? p_( $param_arr['cb'][2] ) : null;
 

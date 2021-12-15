@@ -30,14 +30,14 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
     switch ( $data['form'] ) {
       case 'general':
         
-        $uno_global_walker_variable = 'New General Information';
+        $uno_global_walker_variable = 'Personal Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-general', [], '']] );
 
         break;
       case 'gip':
-        $uno_global_walker_variable = 'New GIP Assistance';
+        $uno_global_walker_variable = 'Personal Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-gip', [], '']] );
@@ -45,7 +45,7 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
         break;
       case 'tupad':
 
-        $uno_global_walker_variable = 'New TUPAD Assistance';
+        $uno_global_walker_variable = 'Personal Information';
         
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-tupad', [], '']] );
@@ -53,7 +53,7 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
         break;
       case 'deped':
 
-        $uno_global_walker_variable = 'New DepEd Assistance';
+        $uno_global_walker_variable = 'Personal Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-deped', [], '']] );
@@ -61,7 +61,7 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
         break;
       case 'ched':
         
-        $uno_global_walker_variable = 'New CHED Assistance';
+        $uno_global_walker_variable = 'Personal Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-ched', [], '']] );
@@ -69,7 +69,7 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
         break;
       case 'tesda':
 
-        $uno_global_walker_variable = 'New TESDA Assistance';
+        $uno_global_walker_variable = 'Personal Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-tesda', [], '']] );
@@ -77,7 +77,7 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
         break;
       case 'aics':
 
-        $uno_global_walker_variable = 'New AICS Assistance';
+        $uno_global_walker_variable = 'Client Identifying Information';
 
         uno_user_check_cap( 'encoder' );
         uno_output_renderer( ['cb' => ['templates/forms/form-aics', [], '']] );

@@ -400,7 +400,8 @@ if(sign.length && sign.val().length > 30) {
         fields.parent('.card-body').append(copy);
         copy.attr('id', table_id + '_' + additional );
 
-        $('#'+ table_id +'_'+ additional +' thead tr .w-65').html( '<a href="#" class="float-right text-danger remove_table_fields"><i class="icon-close"></i> Delete</a>' );
+        var title = $('#'+ table_id +'_'+ additional +' thead tr .table-fields-title').text();
+        $('#'+ table_id +'_'+ additional +' thead tr .table-fields-header').html( '<b>'+ title +'</b><a href="#" class="ml-4 text-danger remove_table_fields"><i class="icon-close"></i> Delete</a>' );
         additional++;
       }
 

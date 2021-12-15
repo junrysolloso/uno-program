@@ -13,11 +13,8 @@ function uno_field_template( $data = [] ) {
           <table class="table table-fields" id="<?php p_( uno_table_id( $table ) ); ?>">
             <thead>
               <tr>
-                <th class="text-wrap">
-                  <a aria-label="Please fill-in, select or toggle the fields below or leave empty or unselect if no value." data-microtip-size="large" data-microtip-position="bottom-right" role="tooltip"><i class="icon-info mr-2"></i></a>
-                  <b><?php p_( ucwords( implode( ' ', explode( '_', $table ) ) ) ); ?></b>
-                </th>
-                <th class="text-right w-65">
+                <th class="text-wrap table-fields-header" colspan="2">
+                  <b class="table-fields-title"><?php p_( ucwords( implode( ' ', explode( '_', $table ) ) ) ); ?></b>
                   <?php p_( apply_filters( 'uno_table_header_right', '' ) ); ?>
                 </th>
               </tr>
@@ -374,7 +371,7 @@ function uno_view_single_data() {
                 <?php foreach ( $rows as $row ): ?>
                   <?php if ( ! isset( $row['label'] ) ): ?>
                     <tr>
-                      <td class="text-center">
+                      <td class="text-right">
                         <h3 class="display-5"><?php p_( $count++ ); ?></h3>
                       </td>
                       <td>

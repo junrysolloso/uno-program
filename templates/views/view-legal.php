@@ -71,11 +71,35 @@ $uno_global_data['case_information'] = [
 $data = [
   'table' => 'document_information',
   'key'   => [
-    'uno_beneficiary_legal_document_presented' => 'Document'
+    'uno_beneficiary_legal_document_presented' => 'Document Presented'
   ]
 ];
 
 uno_view_array( $data );
+
+/**
+ * Date
+ */
+$uno_global_data['date'] = [
+  [
+    'label' => 'Date Endorsed to PAO',
+    'value' => uno_get_the_meta( 'uno_beneficiary_legal_endorsed_to_pao' ),
+  ],
+  [
+    'label' => 'Date Emailed to PAO',
+    'value' => uno_get_the_meta( 'uno_beneficiary_legal_emailed_to_pao' ),
+  ]
+];
+
+/**
+ * Lawyer
+ */
+$uno_global_data['lawyer_assigned'] = [
+  [
+    'label' => 'Lawyer Assigned',
+    'value' => uno_get_the_meta( 'uno_beneficiary_legal_lawyer_name' ),
+  ]
+];
 
 /**
  * Interviewed by
