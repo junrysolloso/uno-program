@@ -15,11 +15,6 @@ $uno_global_queries['uno_trabaho'] = [
   'meta_query' 	=> [
     'relation' => 'OR',
     [
-      'key' 		=> 'uno_beneficiary_category_general',
-      'value' 	=> 'general',
-      'compare' => '='
-    ],
-    [
       'key' 		=> 'uno_beneficiary_category_gip',
       'value' 	=> 'gip',
       'compare' => '='
@@ -116,7 +111,7 @@ $uno_global_queries['uno_youth'] = [
 
 /**
  * =================================================================
- * Global fields for viewing
+ * General fields
  * =================================================================
  */
 
