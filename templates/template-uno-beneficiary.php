@@ -102,5 +102,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
      * Show profile
      */
     uno_output_renderer( ['page' => 'uno_view_single_data'] );
+  } else {
+    wp_die( 'Invalid Request.', 'Error' );
   }
 }

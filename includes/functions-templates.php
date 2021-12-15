@@ -287,7 +287,7 @@ function uno_login_template() {
                       <div class="wrapper mt-5 text-gray text-left">
                         <p class="footer-text">
                           &copy; 2021 UNO <br />
-                          <a class="text-muted">Powered by Dinagat Coder</a>
+                          <a class="text-muted">Made with ❤ by Dinagat Coder</a>
                         </p>
                       </div>
                     </form>
@@ -319,9 +319,9 @@ function uno_view_single_data() {
   ?>
   <?php uno_get_header(); ?>
   <div class="row d-flex align-items-center justify-content-center flex-column">
-    <div class="col-lg-10 col-md-12 pb-4">
+    <div class="col-lg-10 col-md-12">
 
-      <div class="card mb-4">
+      <div class="card mb-4 mt-4">
         <div class="card-body profile-card-body">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">

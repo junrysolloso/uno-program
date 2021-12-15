@@ -263,6 +263,7 @@ div.dataTables_wrapper div.dataTables_filter {
 
 .btn {
   position: relative;
+  text-transform: capitalize;
   border-radius: 6px !important;
   border: 0px;
   display: -webkit-box;

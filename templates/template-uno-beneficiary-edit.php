@@ -26,6 +26,10 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
   add_filter( 'uno_page_header_title', function() { return 'Personal Information'; } );
 
   if ( isset( $data['uno_cat'] ) ) {
+
+    /**
+     * Check nonce
+     */
     uno_nonce_check( 'get', 'uno_nonce', false );
 
     switch ( $data['uno_cat'] ) {

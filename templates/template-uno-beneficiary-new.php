@@ -25,7 +25,11 @@ else if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
    * Look for the right form
    */
   if ( isset( $data['form'] ) ) {
-    uno_nonce_check( 'get', 'uno_nonce' );
+
+    /**
+     * Check nonce
+     */
+    uno_nonce_check( 'get', 'uno_nonce', false );
 
     switch ( $data['form'] ) {
       case 'general':

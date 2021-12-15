@@ -85,7 +85,7 @@ function uno_search_results() {
         <?php while( $query->have_posts() ): $query->the_post(); ?>
           <tr>
             <td class="text-uno">
-              <a title="Uno ID" href="<?php uno_e_site_url() ?>beneficiary/?uno_id=<?php p_( get_the_ID() ); ?>&uno_nonce=<?php p_( uno_get_nonce() ); ?>&uno_cat=<?php p_( uno_get_the_meta( 'uno_beneficiary_category' ) ); ?>&uno_check=read">
+              <a title="Uno ID" href="<?php uno_e_site_url() ?>beneficiary/?uno_id=<?php p_( get_the_ID() ); ?>&uno_nonce=<?php p_( uno_get_nonce() ); ?>&uno_cat=general">
                 <?php p_( uno_get_the_meta( 'uno_beneficiary_id' ) ); ?>  
               </a>
             </td>

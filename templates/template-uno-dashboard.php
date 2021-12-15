@@ -75,7 +75,7 @@ $widgets = [
 wp_reset_postdata();
 
 /**
- * Minify and output
+ * Minify and output html
  */
 uno_output_renderer( ['page' => 'uno_dashboard_page'] );
 function uno_dashboard_page() {

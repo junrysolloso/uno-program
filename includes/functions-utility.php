@@ -170,7 +170,7 @@ function uno_input_meta_builder( $meta ) {
 }
 
 /**
- * Check user if login and if subscriber
+ * Check user capability
  */
 function uno_user_check_cap( $action ) {
 
@@ -178,13 +178,7 @@ function uno_user_check_cap( $action ) {
     uno_redirect( uno_login_url() );
   }
 
-  if ( current_user_can( 'administrator' )
-  || current_user_can( 'uno_trabaho' )
-  || current_user_can( 'uno_iskolar' )
-  || current_user_can( 'uno_ayuda' )
-  || current_user_can( 'uno_legal' )
-  || current_user_can( 'uno_health' )
-  || current_user_can( 'uno_youth' ) ) {
+  if ( current_user_can( 'administrator' ) || current_user_can( 'encoder' ) ) {
     
     if ( ! current_user_can( 'administrator' ) ) {
       switch ( $action ) {
@@ -215,13 +209,13 @@ function uno_user_check_cap( $action ) {
           break;
         default:
           
-          wp_die( 'Sorry something went wrong.', 'Error' );
+          wp_die( 'Action not found.', 'Error' );
   
           break;
       }
     }
   } else {
-    wp_die( 'Sorry something went wrong.', 'Error' );
+    wp_die( 'Bad user.', 'Error' );
   }
 }
 
@@ -278,7 +272,7 @@ function uno_html_minifier( $buffer ) {
 }
 
 /**
- * Remove empty key for 3 dimentional array
+ * Remove empty key up to 3 dimentional array
  */
 function uno_unset_empty_array( $array ) {
 
@@ -378,6 +372,10 @@ function uno_output_renderer( $param_arr ) {
      * Output minified html
      */
     p_( uno_html_minifier( $html ) );
+
+    /**
+     * End the script after
+     */
     exit;
   }
 }
@@ -498,10 +496,10 @@ function uno_input_name( $name = '' ) {
  * Input view value for boolean
  */
 function uno_view_bool( $key ) {
-  global $ID;
+  global $uno_global_id;
   $return = 'No';
 
-  $value = uno_get_the_meta( $key, $ID );
+  $value = uno_get_the_meta( $key, $uno_global_id );
   if ( $value ) {
     $return = 'Yes';
   }
