@@ -97,4 +97,3 @@ if ( $uno_global_id ) {
 }
 
 add_filter( 'uno_table_header_right', '__return_false' );
-
