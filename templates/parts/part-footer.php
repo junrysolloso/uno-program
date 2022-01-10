@@ -6,7 +6,7 @@
             <!-- start footer -->
             <footer class="footer">
               <div class="container-fluid clearfix">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">&copy; <?php echo date( 'Y' ); ?> UNO</span>
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">&copy; <?php echo date( 'Y' ); ?> UNO. All Rights Reserved.</span>
                 <span class="float-none text-muted float-sm-right d-block mt-1 mt-sm-0 text-center">Made with ❤ by Dinagat Coder</span>
               </div>
             </footer>

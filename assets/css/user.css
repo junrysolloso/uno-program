@@ -447,13 +447,13 @@ input:focus-within {
   background-position-x: center;
 }
 
-.login-page .form-control {
+/* .login-page .form-control {
   border: unset;
   border-radius: unset !important;
   border-bottom: 1px solid #cfd5db;
   display: inline-block;
   padding: unset;
-}
+} */
 
 /* End Input */
 
