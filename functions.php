@@ -18,9 +18,9 @@ $uno_global_queries         = [];
 /**
  * Get global data from query string
  */
-isset( $_GET['uno_id'] )    ? $uno_global_id    = sanitize_text_field( $_GET['uno_id'] )    : $uno_global_id = 0;
-isset( $_GET['uno_cat'] )   ? $uno_global_cat   = sanitize_text_field( $_GET['uno_cat'] )   : $uno_global_cat = '';
-isset( $_GET['uno_check'] ) ? $uno_global_check = sanitize_text_field( $_GET['uno_check'] ) : $uno_global_check = '';
+@$_GET['uno_id']    ? $uno_global_id    = sanitize_text_field( $_GET['uno_id'] )    : $uno_global_id = 0;
+@$_GET['uno_cat']   ? $uno_global_cat   = sanitize_text_field( $_GET['uno_cat'] )   : $uno_global_cat = '';
+@$_GET['uno_check'] ? $uno_global_check = sanitize_text_field( $_GET['uno_check'] ) : $uno_global_check = '';
 
 /**
  * Add core functions
